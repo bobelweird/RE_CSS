@@ -1,0 +1,243 @@
+/* Reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset, img { border: 0; }
+address, caption, cite, code, dfn, th, var { font-style: normal; font-weight: normal; }
+ol, ul { list-style: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+q:before, q:after { content:''; }
+abbr, acronym { border:0; }
+
+/* Global */
+body { background-color: #fff; color: #000; font-family: 'Fira Sans', sans-serif; padding: 32px 0; text-align: center; }
+#global { text-align: left; margin: 0 auto; width: 980px; }
+
+/* Espacements */
+h1, h2, h3, h4, h5, h6, table, p, #sommaire, div.note, div.jqplot-target { margin-bottom: 32px; }
+table table, table div.jqplot-target { margin-bottom: 0; }
+
+/* En-tête */
+#logo { width: 200px; }
+#entete h1 { font-size: 26px; font-weight: 800; margin-bottom: 16px; }
+#entete h2 { font-size: 18px; font-style: italic;  }
+#entete ul { list-style: none; margin-left: 0; font-size: 14px;}
+
+/* Listes */
+ul { list-style: circle outside; margin-left: 32px; margin-bottom: 16px; }
+li ul { margin-top: 8px; margin-bottom: 0; }
+li { margin-bottom: 8px; }
+#document #sommaire ul li ul li {font-size: 14px;}
+#sommaire ul li { color: #006cc9; }
+#sommaire ul li ul li { color: #0f9400; }
+#sommaire ul li ul li ul li { color: #000000; }
+/*#sommaire ul li ul li ul li { color: #f07500; }
+#sommaire ul li ul li ul li ul li { color: #d50019; }*/
+
+/* Titles */
+#document h1, #document h2, #document h3, #document h4, #document h5, #document h6 { border-bottom: 0px solid #ccc; border-left: 10px solid #ccc; padding: 4px 0 4px 16px; font-weight: normal; position: relative; }
+
+#document .feuillet h1 { font-size: 26px; color: #000000; border-color: #666; margin-top: 30px; }
+#document h2 { font-size: 26px; color: #006cc9; border-color: #006cc9; margin-top: 30px; }
+#document h3 { font-size: 22px; color: #0f9400; border-color: #0f9400; margin-top: 26px; }
+#document h4 { font-size: 18px; color: #f07500; border-color: #f07500; margin-top: 22px; }
+#document h5 { font-size: 16px; color: #d50019; border-color: #d50019; margin-top: 18px; }
+#document h6 { font-size: 14px; color: #4d4d4d; border-color: #4d4d4d; margin-top: 16px; }
+
+#document h2 span { color: #004987; font-weight: 500; }
+#document h3 span { color: #006b0e; font-weight: 500; }
+#document h4 span { color: #d74300; font-weight: 500; }
+#document h5 span { color: #9e0013; font-weight: 500; }
+#document h6 span { color: #333333; font-weight: 500; }
+
+td.h2, td.h2, span.h2 { color: #004987; font-weight: 500; }
+th.h3, td.h3, span.h3 { color: #006b0e; font-weight: 500; background-color: #C5E998 !important;}
+th.h4, td.h4, span.h4 { color: #d74300; font-weight: 500; }
+th.h5, td.h5, span.h5 { color: #9e0013; font-weight: 500; }
+th.h6, td.h6, span.h6 { color: #333333; font-weight: 500; background-color: #EAF7DA !important;}
+th.h7, td.h7, span.h7 { color: #004987; font-weight: 500; background-color: #DBDBDB !important;}
+th.h8, td.h8, span.h8 { color: #004987; font-weight: 500; background-color: #C2F0FE !important;}
+th.h9, td.h9, span.h9 { color: #004987; font-weight: 500; background-color: #F8AB72 !important;}
+
+/* Liens */
+p.top { text-align: right; margin-bottom: 0; }
+p.top a:link, p.top a:visited, p.top a:active { color: #000; text-decoration: none; padding-left: 16px; background: url("../images/top.png") left center no-repeat; }
+p.top a:hover { text-decoration: underline; }
+
+
+/* Tables */
+table.rt2012, table.rt2012 th, table.rt2012 td { border: 1px solid #999; font-size: 13px;  }
+table.rt2012 th, table.rt2012 td { padding: 3px 7px; vertical-align: top; }
+table.rt2012 th { font-weight: 500; }
+
+table.position td.left, table.position td.right { vertical-align: top; width: 50%; }
+table.position td.left { padding-right: 16px; }
+table.position td.right { padding-left: 16px; text-align: right; }
+
+/* pour affiche les données complémentaires - debug */
+table tr td.DC {background-color:#8AC2E3;}
+
+/* batiment */
+#document h2 span.bat, #document h3 span.bat, #document h4 span.bat  {
+	display: inline-block;
+	font-size: 14px;
+	background-color: #EB3A21;
+	color: #fff;
+	padding: 3px 6px;
+	margin-top: 10px;
+	float: right;
+}
+
+#document span.zone  {
+	display: inline-block;
+	font-size: 14px;
+	background-color: #0080FF;
+	color: #fff;
+	padding: 3px 6px;
+	margin-top: 0px;
+	width: 152px;
+	float: left;
+}
+
+
+/* Bleu */
+table.h2 thead th { text-align: center; }
+table.h2 th { background-color: #ccecff; }
+table.h2 .strong, table.h2 tr.strong  th, table.h2 tr.strong td{ background-color: #7ac8ff; }
+
+/* Vert */
+/*table.h3 thead th { text-align: center; }*/
+table.h3 th { background-color: #eaf7da; }
+table.h3 .strong, table.h3 tr.strong  th, table.h3 tr.strong td { background-color: #bee78d; }
+
+/* Orange */
+table.h4 thead th { text-align: center; }
+table.h4 th { background-color: #fff7c2; }
+table.h4 .strong, table.h4 tr.strong th, table.h4 tr.strong td { background-color: #ffe180; }
+
+/* Rouge */
+table.h5 thead th { text-align: center; }
+table.h5 th { background-color: #ffd9da; }
+table.h5 .strong , table.h5 tr.strong  th, table.h5 tr.strong td{ background-color: #ffabad; }
+
+table.h6 thead th { text-align: center; }
+table.h6 th { background-color: #cccccc; }
+table.h6 .strong , table.h6 tr.strong  th, /*table.h6 tr.strong td{ background-color: #cccccc; */}
+
+table.h7 thead th { text-align: center; }
+table.h7 th { background-color: #cccccc; }
+table.h7 .strong , table.h7 tr.strong  th, /*table.h7 tr.strong td{ background-color: #cccccc; */}
+
+table.h8 thead th { text-align: center; }
+table.h8 th { background-color: #A9EBFE; }
+table.h8 .strong , table.h8 tr.strong  th, /*table.h8 tr.strong td{ background-color: #84E1FD; */}
+
+table.h9 thead th { text-align: center; }
+table.h9 th { background-color: #F37E27; }
+table.h9 .strong , table.h9 tr.strong  th, /*table.h9 tr.strong td{ background-color: #F37E27;*/ }
+
+/*.tab_droite { float:right; }*/
+
+
+/* Jaune */
+table.eclairage thead th { text-align: center; }
+table.eclairage th { background-color: #fffdcc; }
+table.jaune .strong, table.jaune tr.strong  th, table.jaune tr.strong td { background-color: #fffa99; }
+
+table.bbio thead th { text-align: center; }
+table.bbio { background-color: #eafdcf; }
+table.bbio th { background-color: #cbfa87; }
+
+table.ecs thead th { text-align: center; }
+table.ecs { background-color: #e5d4eb; }
+table.ecs th { background-color: #cba9d7; }
+
+/* Eclairage */
+table.eclairage thead th { text-align: center; }
+table.eclairage { background-color: #fffdcc; }
+table.eclairage th { background-color: #fffa99; }
+
+/* Chaud */
+table.chaud thead th { text-align: center; }
+table.chaud { background-color: #FACDD0; }
+table.chaud th { background-color: #EDA4A7; }
+
+/* Froid */
+table.froid thead th { text-align: center; }
+table.froid { background-color: #cceaf1; }
+table.froid th { background-color: #99d5e2; }
+
+/* Ventilation */
+table.ventilation thead th { text-align: center; }
+table.ventilation { background-color: #ebdfd9; }
+table.ventilation th { background-color: #ccaba1; }
+
+/* Distribution */
+table.distribution thead th { text-align: center; }
+table.distribution { background-color: #e4eacb; }
+table.distribution th { background-color: #d6dfb2; }
+
+/* Photovoltaique */
+table.photovoltaique thead th { text-align: center; }
+table.photovoltaique { background-color: #d4e2f9; }
+table.photovoltaique th { background-color: #a9c6f4; }
+
+/* Coefficient */
+table.coefficient thead th { text-align: center; }
+table.coefficient { background-color: #FEE5EF; }
+table.coefficient th { background-color: #FFD3DF; }
+
+/* Administratif */
+table.administratif th { background-color: #f2f2f2; }
+table.administratif .strong, table.administratif tr.strong  th, table.administratif tr.strong td { background-color: #cccccc; }
+
+table thead th.right { text-align: right; }
+table thead th.center { text-align: center; }
+table thead th.left { text-align: left; }
+
+/* PAC froid */ 
+table.h4 td.pac_fr { background-color:#DFEDFD;}
+
+/* PAC chaud */ 
+table.h4 td.pac_ch { background-color:#FDE7C8;}
+
+/* Introduction */
+#intro { border: 1px solid #ce3c92; padding: 12px 16px 4px 16px; background-color: #ffeef4; font-size: 14px; }
+#intro p { margin-bottom: 8px; }
+
+/* Debug */
+.debug { display: block ; background-color: #fee5ef; border-left: 8px #ffabad solid ; padding: 4px 4px;}
+
+/* Commentaires */
+.comment { display: none ; background-color: #d2d2d2; border-left: 8px solid #a4a4a4; padding: 4px 8px; }
+
+/* Commun */
+sup, sub { height: 0; line-height: 1; vertical-align: baseline; position: relative; font-size: 0.7em; }
+sup { bottom: .5em; }
+sub { top: .25em; }
+
+.important { color: red; }
+.hide { display: none; }
+.vide { background-color: #c8c8c8; }
+
+.batiment, .zone, .groupe { font-size: 16px; }
+.zone, .groupe { padding-bottom: 8px; margin-bottom: 24px; border-bottom: 1px solid #ccc; }
+
+/* Notes */
+div.note, p.note { padding: 8px 16px 8px 64px ; background: #f2f2f2 url("../images/note.png") 16px 8px no-repeat; font-style: italic; color: #4d4d4d; min-height: 32px; font-size: 12px }
+div.note p, div.note ul { margin-bottom: 8px; }
+
+div.identification, p.identification { padding: 8px 8px 16px 64px ; background: #f2f2f2  url("../images/maison_zone.png") 16px 8px no-repeat; font-style:  normal; color: #4d4d4d; min-height: 32px; }
+
+
+/* Etats */
+.ok , .ko, .warning { font-weight: 500; }
+.infos { color: #006cc9; }
+p.infos { background-color: #ccecff; padding: 8px 16px; }
+.ok { color: #0f9400; }
+.warning { color: #d74300; }
+.ko, .error { color: #d50019; }
+
+/* Alert */
+table.rt2012 td.alert { color: #d74300; text-align: center; font-weight: 500; background: #ffffff url("../images/alert.png") center center repeat-x; font-size: 14px; padding: 8px; }
+table.rt2012 td.alert { color: #d50019; text-align: center; font-weight: 500; background-color: #ffd9da; font-size: 14px; padding: 8px; }
